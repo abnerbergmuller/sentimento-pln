@@ -22,7 +22,7 @@
 ## 1. Pré-processamento
 *Quais decisões você tomou (minúsculas, pontuação, números, stopwords)? Qual o tamanho do vocabulário com e sem remoção de stopwords? O que você fez com a palavra "não" e por quê?*
 
-(sua resposta)
+Para minúsculas simplesmente converti o texto vindo da função usando ".lower()", evitando que uma mesma palavra com ou sem letra maiúscula sejam consideradas iguais. Para pontuações e números, os removi utilizando expressões regulares. Acentos não foram removidos, mantive pois têm utilidade no português, mantendo a grafia correta das palavras. As stopwords criei utilizando artigos, preposições e conectivos geralmente frequentes. Sobre a palavra "não", ela ficou de fora pois se estivesse ali para ser removida, inverteria o sentido da frase e geraria um erro induzido. Como não prossegui as etapas adiante, não medi o vocabulário.
 
 ## 2. BoW vs. TF-IDF
 *Compare as quatro configurações levando em conta o desvio padrão. As diferenças são relevantes? Qual você escolheu e com base em quê? Explique a diferença conceitual entre as duas representações.*
@@ -56,4 +56,4 @@
 Marque uma opção e complete:
 
 - [ ] Não usei IA generativa em nenhuma parte deste trabalho.
-- [ ] Usei IA generativa **somente** para: ______________ (não é permitido gerar código ou relatório).
+- [X] Usei IA generativa **somente** para: tirar dúvidas sobre a implementação do enunciado (não é permitido gerar código ou relatório).
